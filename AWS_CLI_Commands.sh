@@ -5,6 +5,7 @@
 #Version: v0.1
 #AWS monitor templates
 ####################
+
 echo "#List s3 buckets"
 aws s3 ls
 
