@@ -1,10 +1,13 @@
 #!/bin/bash
-
+######## Pre-Request ######
+# aws-cli should be installed
+# aws configure - Should be configured
+############################
 # File containing S3 bucket names (one per line)
 aws s3 ls | awk '{print $3 }' > buckets.txt
-BUCKET_FILE="buckets.txt"
+BUCKET_FILE="buckets.txt"  # Modify the bucket names here
 date=`date +%Y-%m-%d`
-output_file="s3_bucket"
+output_file="s3_bucket"    # output file here
 
 # Use the AWS CLI to list folders (common prefixes) inside each S3 bucket
 while read -r S3_BUCKET; do
