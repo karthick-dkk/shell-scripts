@@ -7,7 +7,7 @@ HOST='localhost'   # Hostname here
 
 # Save the DB User list into file 
 mysql -h$HOST -u$ADMIN_USER -p"{$ADMIN_PASS}" -e " SELECT user,host FROM mysql. user;" > current_user_list
-
+# Edit the current_user_list , which user accounts need to delete to be delete
 for user in `cat user_list`    
 do
        mysql -h$HOST -u$ADMIN_USER -p"{$ADMIN_PASS}" -e " drop user '$user'@'localhost';"  >  /dev/null 2>&
