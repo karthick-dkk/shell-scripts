@@ -1,6 +1,5 @@
 #!/bin/bash
 ####################
-#Author: Karthick D
 #Author Email: karthidkk123@gmail.com
 #Version: v0.1
 #AWS monitor templates
