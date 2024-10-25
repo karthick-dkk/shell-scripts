@@ -1,2 +1,2 @@
-# shell-scripts
-shell scripts
+# Shell-scripts
+Shell scripts for day to day tasks
